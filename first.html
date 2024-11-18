@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>河北东方学院人工智能学院</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0066cc;
+            --text-light: #ffffff;
+            --text-dark: #333333;
+            --bg-dark: #1a1a1a;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-dark);
+        }
+
+        .hero {
+            position: relative;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: var(--text-light);
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://hebbkx1anhila5yf.public.blob.vercel-storage.com/001.jpg-eD4YIJ0njDCiz5uGLpozBiYfmvxKdy.jpeg');
+            background-size: cover;
+            background-position: center;
+            z-index: -1;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+            position: relative;
+        }
+
+        .logo {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-10px); }
+            100% { transform: translateY(0px); }
+        }
+
+        .title {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+            text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+            color: rgba(255,255,255,0.9);
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: var(--primary);
+            color: var(--text-light);
+            text-decoration: none;
+            border-radius: 30px;
+            font-weight: bold;
+            transition: transform 0.3s ease;
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+        }
+
+        .features {
+            padding: 4rem 2rem;
+            background: rgba(255,255,255,0.05);
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature-card {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 10px;
+            text-align: center;
+            color: var(--text-light);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .stats {
+            padding: 4rem 2rem;
+            background: linear-gradient(45deg, #000428, #004e92);
+            color: var(--text-light);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .stat-item h3 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary);
+        }
+
+        .footer {
+            padding: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            background-color: rgba(0,0,0,0.8);
+        }
+
+        @media (max-width: 768px) {
+            .title {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1.2rem;
+            }
+        }
+
+        .tech-background {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.1;
+        }
+
+        .tech-background::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: 
+                linear-gradient(90deg, var(--primary) 1px, transparent 1px) 0 0 / 50px 50px,
+                linear-gradient(0deg, var(--primary) 1px, transparent 1px) 0 0 / 50px 50px;
+        }
+        .one{
+            color: #ffffff;
+        }
+    </style>
+</head>
+<body>
+    <div class="tech-background"></div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/微信图片_20241108144752-Mm2aL1RDQWO7o1AZuEzai9oVG596KQ.png" alt="河北东方学院人工智能学院标志" class="logo">
+            <h1 class="title">河北东方学院人工智能学院</h1>
+            <p class="subtitle">引领人工智能教育创新 · 培养未来科技人才</p>
+            <a href="index.html" class="cta-button">了解更多</a>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🤖</div>
+                <h3>人工智能研究</h3>
+                <a href="https://mp.weixin.qq.com/s/qbPUpxF1I51S9a2gTxBKWA" class="one">冒雨视察促提升：书记心系人工智能学院一站式学生社区</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🎓</div>
+                <h3>专业教育</h3>
+                <a href="https://mp.weixin.qq.com/s/WcWH9KV8OAr2I6d7lDeyOw" class="one">河北东方学院人工智能学院开展消防应急演练活动</a>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌐</div>
+                <h3>产学研合作</h3>
+                <a href="https://mp.weixin.qq.com/s/WcWH9KV8OAr2I6d7lDeyOw" class="one">河北东方学院人工智能学院开展消防应急演练活动</a></h4>
+            </div>
+        </div>
+    </section>
+
+    <section class="stats">
+        <div class="stats-grid">
+            <div class="stat-item">
+                <h3>5个</h3>
+                <p>开设专业</p>
+            </div>
+            <div class="stat-item">
+                <h3>50+</h3>
+                <p>专业教师</p>
+            </div>
+            <div class="stat-item">
+                <h3>20+</h3>
+                <p>研究实验室</p>
+            </div>
+            <div class="stat-item">
+                <h3>3+</h3>
+                <p>合作大厂</p>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2024 河北东方学院人工智能学院 版权所有</p>
+    </footer>
+</body>
+</html>
